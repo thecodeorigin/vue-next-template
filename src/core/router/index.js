@@ -1,14 +1,13 @@
 import { createRouter, createWebHistory } from "vue-router";
 import { auth } from "../middleware/auth";
-import home from "../../modules/home/router";
 import about from "../../modules/about/router";
-import compositionApi from "../../modules/composition-api/router";
+import home from "../../modules/home/router";
 
 /**
  * @typedef {import('vue-router').RouteRecordRaw} RouteRecordRaw
  * @type {Array<RouteRecordRaw>}
  */
-const routes = [...home, ...about, ...compositionApi];
+const routes = [...about, ...home];
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),

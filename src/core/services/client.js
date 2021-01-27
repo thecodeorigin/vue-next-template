@@ -5,11 +5,11 @@ import { axiosConfig } from "./config";
 /**
  * Client api call with Axios
  */
-const clientApi = axios.create(axiosConfig);
-// clientApi.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
+export const $clientApi = axios.create(axiosConfig);
+// $clientApi.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
 
 // Add a request interceptor
-clientApi.interceptors.request.use(
+$clientApi.interceptors.request.use(
   config => config,
   error => {
     throw new Error(error);
@@ -17,11 +17,15 @@ clientApi.interceptors.request.use(
 );
 
 // Add a response interceptor
-clientApi.interceptors.response.use(
+$clientApi.interceptors.response.use(
   response => response,
   error => {
     throw new Error(error);
   }
 );
 
-export { clientApi };
+export const clientApiPlugin = {
+  install(app) {
+    app.config.globalProperties.$authApi = $clientApi;
+  }
+};

@@ -1,31 +1,39 @@
 <template>
-  <div class="text-center">
-    <HelloWorld msg="This is the home page" />
-  </div>
+  <div></div>
 </template>
 <script>
-import { defineComponent } from "vue";
-import HelloWorld from "../components/HelloWorld.vue";
+import { defineComponent, onMounted, onUnmounted, onUpdated } from "vue";
+import usePost from "@/modules/post/use";
+import useAuthor from "@/modules/author/use";
+
 export default defineComponent({
   components: {
-    HelloWorld
+    // ExampleComponent,
   },
-  inject: ["globalDI"],
+  setup() {
+    onMounted(() => {
+      usePost.mounted();
+      useAuthor.mounted();
+    });
+    onUpdated(() => {
+      usePost.updated();
+      useAuthor.updated();
+    });
+    onUnmounted(() => {
+      usePost.unmounted();
+      useAuthor.unmounted();
+    });
+    return {
+      ...usePost,
+      ...useAuthor
+    };
+  },
+  async created() {
+    await this.fetchPosts();
+    // this.posts = await this.fetchPosts();
+  },
   mounted() {
-    /**
-     * This function is injected in main.js with exampleDI plugin as globalDI
-     * See plugin file @/src/core/plugins/exampleDI.js
-     *
-     * This is an example of using a regular plugin in Vue 3
-     */
-    this.$examplePlugin("[Home component mounted]");
-    /**
-     * This function is injected in main.js with exampleDI plugin as globalDI
-     * See plugin file @/src/core/plugins/exampleDI.js
-     *
-     * This is an example of using dependency injection for plugin in Vue 3
-     */
-    this.globalDI.$exampleDIFunction("[Home component mounted]");
+    console.log("Mounted");
   }
 });
 </script>

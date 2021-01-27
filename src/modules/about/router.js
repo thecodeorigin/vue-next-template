@@ -5,7 +5,7 @@
 const routes = [
   {
     path: "/about",
-    component: () => import("./pages/index.vue")
+    component: () => import("./pages")
   }
 ];
 export default routes;
