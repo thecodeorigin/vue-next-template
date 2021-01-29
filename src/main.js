@@ -15,16 +15,16 @@
  * Personal oppinion: You should Vite for admin page for amazing build time, for a client page, use Vue CLI, Nuxt,...
  */
 import { createApp } from "vue";
-import { router } from "@/core/router";
-import { store } from "@/core/store";
+import { router } from "@/router";
+import { store } from "@/store";
 import { clientApiPlugin } from "@/core/services/client";
 import { authApiPlugin } from "@/core/services/auth";
 import { globalMixin } from "@/core/mixins/global";
 import { examplePlugin } from "@/core/plugins/example";
 import { exampleDIPlugin } from "@/core/plugins/exampleDI";
 import Root from "@/Root.vue";
-import "@/assets/css/main.css";
-import "@/assets/scss/main.scss";
+import "@/core/assets/css/main.css";
+import "@/core/assets/scss/main.scss";
 
 // Check the imported files for code explanation
 createApp(Root)

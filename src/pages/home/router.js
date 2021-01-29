@@ -5,7 +5,7 @@
 const routes = [
   {
     path: "/",
-    component: import("./pages")
+    component: import("./")
   }
 ];
 export default routes;

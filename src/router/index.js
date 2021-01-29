@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
-import { auth } from "../middleware/auth";
-import about from "../../modules/about/router";
-import home from "../../modules/home/router";
+import { auth } from "@/core/middleware/auth";
+import about from "@/pages/about/router";
+import home from "@/pages/home/router";
 
 /**
  * @typedef {import('vue-router').RouteRecordRaw} RouteRecordRaw
