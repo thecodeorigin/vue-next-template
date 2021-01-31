@@ -4,7 +4,7 @@
   >
     <div>
       <span class=" text-white font-bold">
-        thecodeorigin.com
+        {{ $t("home.title") }}
       </span>
     </div>
     <div>

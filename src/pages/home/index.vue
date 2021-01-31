@@ -1,5 +1,7 @@
 <template>
-  <div></div>
+  <div>
+    {{ $t("home.description") }}
+  </div>
 </template>
 <script>
 import { defineComponent, onMounted, onUnmounted, onUpdated } from "vue";

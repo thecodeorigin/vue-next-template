@@ -20,6 +20,7 @@ import { store } from "@/store";
 import { clientApiPlugin } from "@/core/services/client";
 import { authApiPlugin } from "@/core/services/auth";
 import { globalMixin } from "@/core/mixins/global";
+import { i18nPlugin } from "@/core/plugins/i18n";
 import { examplePlugin } from "@/core/plugins/example";
 import { exampleDIPlugin } from "@/core/plugins/exampleDI";
 import Root from "@/Root.vue";
@@ -32,6 +33,7 @@ createApp(Root)
   .use(router)
   .use(clientApiPlugin)
   .use(authApiPlugin)
+  .use(i18nPlugin)
   .use(examplePlugin) // Used in home page
   .provide("globalDI", exampleDIPlugin) // Used in home page
   .mixin(globalMixin)
