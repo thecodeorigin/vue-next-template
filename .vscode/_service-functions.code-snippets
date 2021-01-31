@@ -1,0 +1,42 @@
+{
+  "clientApi": {
+    "scope": "javascript",
+    "prefix": "clientApi",
+    "body": ["$$clientApi",],
+  },
+  "$clientApi": {
+    "scope": "javascript",
+    "prefix": "$clientApi",
+    "body": ["$$clientApi",],
+  },
+  "this.clientApi": {
+    "scope": "javascript",
+    "prefix": "this.clientApi",
+    "body": ["this.$$clientApi",],
+  },
+  "import $clientApi": {
+    "scope": "javascript",
+    "prefix": "import clientApi",
+    "body": ["import { $$clientApi } from \"@/core/services/client\";",],
+  },
+  "authApi": {
+    "scope": "javascript",
+    "prefix": "authApi",
+    "body": ["$$authApi",],
+  },
+  "$authApi": {
+    "scope": "javascript",
+    "prefix": "$authApi",
+    "body": ["$$authApi",],
+  },
+  "this.authApi": {
+    "scope": "javascript",
+    "prefix": "this.authApi",
+    "body": ["this.$$authApi",],
+  },
+  "import $authApi": {
+    "scope": "javascript",
+    "prefix": "import authApi",
+    "body": ["import { $$authApi } from \"@/core/services/auth\";",],
+  },
+}

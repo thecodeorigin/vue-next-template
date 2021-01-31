@@ -1,0 +1,44 @@
+{
+  "formatCurrency": {
+    "scope": "vue-html",
+    "prefix": "formatCurrency",
+    "body": ["formatCurrency",],
+    "description": "Format currency filter"
+  },
+  "formatDate": {
+    "scope": "vue-html",
+    "prefix": "formatDate",
+    "body": ["formatDate",],
+    "description": "Format date filter"
+  },
+  "formatDateTime": {
+    "scope": "vue-html",
+    "prefix": "formatDateTime",
+    "body": ["formatDateTime",],
+    "description": "Format datetime filter"
+  },
+  "formatTime": {
+    "scope": "vue-html",
+    "prefix": "formatTime",
+    "body": ["formatTime",],
+    "description": "Format time filter"
+  },
+  "lower": {
+    "scope": "vue-html",
+    "prefix": "lower",
+    "body": ["lower",],
+    "description": "Lowercase filter"
+  },
+  "upper": {
+    "scope": "vue-html",
+    "prefix": "upper",
+    "body": ["upper",],
+    "description": "Uppercase filter"
+  },
+  "capital": {
+    "scope": "vue-html",
+    "prefix": "capital",
+    "body": ["capital",],
+    "description": "Capitalize filter"
+  },
+}

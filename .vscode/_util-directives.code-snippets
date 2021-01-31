@@ -1,0 +1,10 @@
+{
+  "v-auth directive": {
+    "scope": "vue-html",
+    "prefix": "auth",
+    "body": [
+      "v-auth:allow=\"['${0}']\"",
+    ],
+    "description": "Authentication directive, which will display, disable component base on role's permissions"
+  },
+}

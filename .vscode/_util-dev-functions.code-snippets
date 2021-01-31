@@ -1,0 +1,43 @@
+{
+  "dev:log": {
+    "scope": "javascript",
+    "prefix": "dev:log",
+    "body": ["$$dev.log(\"[${1}]\", ${1})",],
+    "description": "Equivalent to console.log(), but only available in dev mode"
+  },
+  "this.$dev:log": {
+    "scope": "javascript",
+    "prefix": "this.dev:log",
+    "body": ["this.$$dev.log(\"[${1}]\", ${1})",],
+    "description": "Equivalent to console.log(), but only available in dev mode"
+  },
+  "dev:warn": {
+    "scope": "javascript",
+    "prefix": "dev:warn",
+    "body": ["$$dev.warn(\"[${1}]\", ${1})",],
+    "description": "Equivalent to console.warn(), but only available in dev mode"
+  },
+  "this.$dev:warn": {
+    "scope": "javascript",
+    "prefix": "this.dev:warn",
+    "body": ["this.$$dev.warn(\"[${1}]\", ${1})",],
+    "description": "Equivalent to console.warn(), but only available in dev mode"
+  },
+  "dev:error": {
+    "scope": "javascript",
+    "prefix": "dev:error",
+    "body": ["$$dev.error(\"[${1}]\", ${1})",],
+    "description": "Equivalent to console.error(), but only available in dev mode"
+  },
+  "this.$dev:error": {
+    "scope": "javascript",
+    "prefix": "this.dev:error",
+    "body": ["this.$$dev.error(\"[${1}]\", ${1})",],
+    "description": "Equivalent to console.error(), but only available in dev mode"
+  },
+  "import $dev": {
+    "scope": "javascript",
+    "prefix": "import dev",
+    "body": ["import { $$dev } from \"@/core/utils/dev\";",],
+  },
+}

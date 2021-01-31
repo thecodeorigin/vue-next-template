@@ -1,7 +1,8 @@
 {
   "Auth": {
     "scope": "vue-html",
-    "prefix": "auth",
+    // Avoid duplicate prefix with v-auth directive
+    "prefix": "<auth",
     "body": [
       "<auth :allow=\"['${0}']\" >",
       "\t${3}",

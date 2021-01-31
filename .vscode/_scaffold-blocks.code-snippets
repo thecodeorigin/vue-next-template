@@ -1,5 +1,5 @@
 {
-  "scf": {
+  "scaffold": {
     "scope": "vue",
     "prefix": "scf",
     "body": [
@@ -11,25 +11,30 @@
       "export default defineComponent({",
       "\tname: \"${0}\",",
       "\tprops: {},",
+      "\tsetup(props) {",
+      "\t\t//",
+      "\t},",
       "\tdata() {",
       "\t\treturn {",
-      "\t",
+      "\t\t\t//",
       "\t\t};",
       "\t},",
       "});",
       "</script>",
       "<style lang=\"scss\">",
+      "@import \"@/src/core/assets/scss/global/all.scss\"",
       ".${0}-component {",
       "}",
       "</style>",
       "<style lang=\"scss\" scoped>",
+      "@import \"@/src/core/assets/scss/global/all.scss\"",
       ".${0}-component {",
       "}",
       "</style>"
     ],
     "description": "Scaffold a Vue 3 component"
   },
-  "script": {
+  "script tag": {
     "scope": "vue",
     "prefix": "script",
     "body": [
@@ -38,14 +43,37 @@
       "export default defineComponent({",
       "\tname: \"${0}\",",
       "\tprops: {},",
+      "\tsetup(props) {",
+      "\t\t//",
+      "\t},",
       "\tdata() {",
       "\t\treturn {",
-      "\t",
+      "\t\t\t//",
       "\t\t};",
       "\t},",
       "});",
       "</script>"
     ],
     "description": "Script tag in Vue 3 using optional API with defineComponent()"
+  },
+  "scss style tag": {
+    "scope": "vue",
+    "prefix": "style:scss",
+    "body": [
+      "<style lang=\"scss\">",
+      "@import \"@/src/core/assets/scss/global/all.scss\";",
+      "</style>",
+    ],
+    "description": "Style tag in with defined mixins in scss/global"
+  },
+  "scss scoped style tag": {
+    "scope": "vue",
+    "prefix": "style:scss scoped",
+    "body": [
+      "<style lang=\"scss\" scoped>",
+      "@import \"@/src/core/assets/scss/global/all.scss\";",
+      "</style>",
+    ],
+    "description": "Scoped style tag in with defined mixins in scss/global"
   },
 }
