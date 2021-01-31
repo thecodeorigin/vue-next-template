@@ -1,0 +1,51 @@
+{
+  "scf": {
+    "scope": "vue",
+    "prefix": "scf",
+    "body": [
+      "<template>",
+      "\t<div class=\"${0}-component\"></div>",
+      "</template>",
+      "<script>",
+      "import { defineComponent } from \"vue\";",
+      "export default defineComponent({",
+      "\tname: \"${0}\",",
+      "\tprops: {},",
+      "\tdata() {",
+      "\t\treturn {",
+      "\t",
+      "\t\t};",
+      "\t},",
+      "});",
+      "</script>",
+      "<style lang=\"scss\">",
+      ".${0}-component {",
+      "}",
+      "</style>",
+      "<style lang=\"scss\" scoped>",
+      ".${0}-component {",
+      "}",
+      "</style>"
+    ],
+    "description": "Scaffold a Vue 3 component"
+  },
+  "script": {
+    "scope": "vue",
+    "prefix": "script",
+    "body": [
+      "<script>",
+      "import { defineComponent } from \"vue\";",
+      "export default defineComponent({",
+      "\tname: \"${0}\",",
+      "\tprops: {},",
+      "\tdata() {",
+      "\t\treturn {",
+      "\t",
+      "\t\t};",
+      "\t},",
+      "});",
+      "</script>"
+    ],
+    "description": "Script tag in Vue 3 using optional API with defineComponent()"
+  },
+}

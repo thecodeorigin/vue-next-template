@@ -1,0 +1,132 @@
+{
+
+  // ===
+  // Icon themes
+  // ===
+
+  "workbench.iconTheme": "material-icon-theme",
+  "material-icon-theme.folders.color": "#ef5350",
+  "material-icon-theme.activeIconPack": "vue_vuex",
+  "material-icon-theme.files.associations": {
+      "actions.js": "vuex-store",
+      "getters.js": "vuex-store",
+      "mutations.js": "vuex-store",
+      "state.js": "vuex-store",
+      "actions.ts": "vuex-store",
+      "getters.ts": "vuex-store",
+      "mutations.ts": "vuex-store",
+      "state.ts": "vuex-store",
+      "i18n.js": "i18n",
+      "en.json": "i18n",
+      "vi.json": "i18n",
+      "*.strategy.ts": "lock"
+  },
+  "material-icon-theme.folders.associations": {
+      "dto": "typescript",
+      "enum": "typescript",
+      "ro": "typescript",
+      "interfaces": "typescript",
+      "decorators": "typescript",
+      "mixins": "vue",
+      "use": "mappings",
+  },
+
+  // ===
+  // TailwindCSS
+  // ===
+
+  "tailwindCSS.includeLanguages": {
+    "plaintext": "html",
+    "tailwindCSS.emmetCompletions": "on",
+    "editor.colorDecorators": "on"
+  },
+
+  // ===
+  // Spacing
+  // ===
+
+  "editor.insertSpaces": true,
+  "editor.tabSize": 2,
+  "editor.trimAutoWhitespace": true,
+  "files.trimTrailingWhitespace": true,
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+
+  // ===
+  // Files
+  // ===
+
+  "files.exclude": {
+    "**/*.log": true,
+    "**/*.log*": true,
+    "**/dist": true,
+    "**/coverage": true
+  },
+  "files.associations": {
+    ".markdownlintrc": "jsonc"
+  },
+
+  // ===
+  // Event Triggers
+  // ===
+
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true,
+    "source.fixAll.markdownlint": true
+  },
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "vue",
+    "vue-html",
+    "html"
+  ],
+  "vetur.format.enable": false,
+  "vetur.completion.scaffoldSnippetSources": {
+    "user": "🗒️",
+    "workspace": "💼",
+    "vetur": ""
+  },
+
+  // ===
+  // HTML
+  // ===
+
+  "html.format.enable": false,
+  "vetur.validation.template": false,
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.includeLanguages": {
+    "vue-html": "html"
+  },
+  "vetur.completion.tagCasing": "initial",
+
+  // ===
+  // JS(ON)
+  // ===
+
+  "javascript.format.enable": false,
+  "json.format.enable": false,
+  "vetur.validation.script": false,
+
+  // ===
+  // CSS
+  // ===
+
+  "stylelint.enable": true,
+  "css.validate": false,
+  "scss.validate": false,
+  "vetur.validation.style": false,
+
+  // ===
+  // MARKDOWN
+  // ===
+
+  "[markdown]": {
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 80
+  }
+}

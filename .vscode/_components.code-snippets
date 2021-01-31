@@ -1,0 +1,20 @@
+{
+  "Auth": {
+    "scope": "vue-html",
+    "prefix": "auth",
+    "body": [
+      "<auth :allow=\"['${0}']\" >",
+      "\t${3}",
+      "</auth>",
+    ],
+    "description": "Authentication wrapper, which will display, disable component base on role's permissions"
+  },
+  "Fontawesome": {
+    "scope": "vue-html",
+    "prefix": "fa",
+    "body": [
+      "<fa :icon=\"['fas', '${1}']\" />"
+    ],
+    "description": "Fontawesome component, by default using the 'fas' (fontawesome solid) library, change to use other library"
+  }
+}
