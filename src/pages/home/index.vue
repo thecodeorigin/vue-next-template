@@ -3,8 +3,8 @@
 </template>
 <script>
 import { defineComponent, onMounted, onUnmounted, onUpdated } from "vue";
-import usePost from "@/core/compositions/post/crud";
-import useAuthor from "@/core/compositions/author/crud";
+import usePost from "@/use/post/crud";
+import useAuthor from "@/use/author/crud";
 
 export default defineComponent({
   components: {

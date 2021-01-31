@@ -1,13 +1,22 @@
 import qs from "qs";
 import { $dev } from "@/core/utils/dev";
 import { $clientApi } from "@/core/services/client";
+import { $authApi } from "@/core/services/auth";
 
 /**
  * Fetch many records
+ *
+ * @param {{
+ * page: number | 1,
+ * limit: number| 10,
+ * filter: ?string,
+ * }} query Query param for REST fetching
+ *
+ * @returns {Promise<any>} API result
  */
-const fetchMany = async query => {
+const fetchMany = async (query = { page: 1, limit: 10 }) => {
   try {
-    const { data } = await $clientApi.get(`/foos?${qs.stringify(query)}`);
+    const { data } = await $clientApi.get(`/examples?${qs.stringify(query)}`);
     return data;
   } catch (err) {
     $dev.error(err);
@@ -16,10 +25,16 @@ const fetchMany = async query => {
 
 /**
  * Fetch one record
+ *
+ * @param {{
+ * id: number,
+ * }} id Record's id
+ *
+ * @returns {Promise<any>} API result
  */
 const fetchOne = async id => {
   try {
-    const { data } = await $clientApi.get(`/foos/${id}`);
+    const { data } = await $clientApi.get(`/examples/${id}`);
     return data;
   } catch (err) {
     $dev.error(err);
@@ -31,7 +46,7 @@ const fetchOne = async id => {
  */
 const createOne = async form => {
   try {
-    const { data } = await $clientApi.post(`/foos`, form);
+    const { data } = await $authApi.example(`/examples`, form);
     return data;
   } catch (err) {
     $dev.error(err);
@@ -43,7 +58,7 @@ const createOne = async form => {
  */
 const updateOne = async (id, form) => {
   try {
-    const { data } = await $clientApi.put(`/foos/${id}`, form);
+    const { data } = await $authApi.put(`/examples/${id}`, form);
     return data;
   } catch (err) {
     $dev.error(err);
@@ -55,7 +70,7 @@ const updateOne = async (id, form) => {
  */
 const deleteOne = async id => {
   try {
-    const { data } = await $clientApi.delete(`/foos/${id}`);
+    const { data } = await $authApi.delete(`/examples/${id}`);
     return data;
   } catch (err) {
     $dev.error(err);
@@ -64,23 +79,23 @@ const deleteOne = async id => {
 
 export default {
   /**
-   * Fetch all foos
+   * Fetch all examples
    */
-  fetchFoos: fetchMany,
+  fetchExamples: fetchMany,
   /**
-   * Fetch one foo
+   * Fetch one example
    */
-  fetchFoo: fetchOne,
+  fetchExample: fetchOne,
   /**
-   * Create one foo
+   * Create one example
    */
-  createFoo: createOne,
+  createExample: createOne,
   /**
-   * Update one foo
+   * Update one example
    */
-  updateFoo: updateOne,
+  updateExample: updateOne,
   /**
-   * Delete one foo
+   * Delete one example
    */
-  deleteFoo: deleteOne
+  deleteExample: deleteOne
 };

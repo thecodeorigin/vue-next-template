@@ -4,6 +4,14 @@ import { $clientApi } from "@/core/services/client";
 
 /**
  * Fetch many records
+ *
+ * @param {{
+ * page: number | 1,
+ * limit: number| 10,
+ * filter: ?string,
+ * }} query Query param for REST fetching
+ *
+ * @returns {Promise<any>} API result
  */
 const fetchMany = async (query = { page: 1, limit: 10 }) => {
   try {
@@ -16,6 +24,12 @@ const fetchMany = async (query = { page: 1, limit: 10 }) => {
 
 /**
  * Fetch one record
+ *
+ * @param {{
+ * id: number,
+ * }} id Record's id
+ *
+ * @returns {Promise<any>} API result
  */
 const fetchOne = async id => {
   try {

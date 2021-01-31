@@ -8,6 +8,7 @@ import { axiosConfig } from "./config";
 export const $clientApi = axios.create(axiosConfig);
 // $clientApi.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
 
+// The code below will be run in the initial state of the app, therefore the export const above will also this configuration
 // Add a request interceptor
 $clientApi.interceptors.request.use(
   config => config,
