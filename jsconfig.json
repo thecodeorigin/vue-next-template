@@ -1,10 +1,133 @@
 {
+  "baseUrl": ".",
+  "include": ["src/**/*", "examples"],
+  "exclude": ["node_modules", "dist"],
+  "typeAcquisition": { "exclude": ["dotenv"] },
   "compilerOptions": {
-    "baseUrl": "./",
+    "baseUrl": ".",
+    "target": "esnext",
+    "module": "es2015",
     "paths": {
-      "@/*": ["./src/*"],
+      "@/*": ["src/*"],
+      "@": [
+        "src/index.js",
+        "src/index.json",
+        "src/index.vue",
+        "src/index.scss",
+        "src/index.css"
+      ],
+      "@assets/*": ["src/core/assets/*"],
+      "@assets": [
+        "src/core/assets/index.js",
+        "src/core/assets/index.json",
+        "src/core/assets/index.vue",
+        "src/core/assets/index.scss",
+        "src/core/assets/index.css"
+      ],
+      "@components/*": ["src/core/components/*"],
+      "@components": [
+        "src/core/components/index.js",
+        "src/core/components/index.json",
+        "src/core/components/index.vue",
+        "src/core/components/index.scss",
+        "src/core/components/index.css"
+      ],
+      "@constants/*": ["src/core/constants/*"],
+      "@constants": [
+        "src/core/constants/index.js",
+        "src/core/constants/index.json",
+        "src/core/constants/index.vue",
+        "src/core/constants/index.scss",
+        "src/core/constants/index.css"
+      ],
+      "@layouts/*": ["src/core/layouts/*"],
+      "@layouts": [
+        "src/core/layouts/index.js",
+        "src/core/layouts/index.json",
+        "src/core/layouts/index.vue",
+        "src/core/layouts/index.scss",
+        "src/core/layouts/index.css"
+      ],
+      "@middleware/*": ["src/core/middleware/*"],
+      "@middleware": [
+        "src/core/middleware/index.js",
+        "src/core/middleware/index.json",
+        "src/core/middleware/index.vue",
+        "src/core/middleware/index.scss",
+        "src/core/middleware/index.css"
+      ],
+      "@mixins/*": ["src/core/mixins/*"],
+      "@mixins": [
+        "src/core/mixins/index.js",
+        "src/core/mixins/index.json",
+        "src/core/mixins/index.vue",
+        "src/core/mixins/index.scss",
+        "src/core/mixins/index.css"
+      ],
+      "@plugins/*": ["src/core/plugins/*"],
+      "@plugins": [
+        "src/core/plugins/index.js",
+        "src/core/plugins/index.json",
+        "src/core/plugins/index.vue",
+        "src/core/plugins/index.scss",
+        "src/core/plugins/index.css"
+      ],
+      "@services/*": ["src/core/services/*"],
+      "@services": [
+        "src/core/services/index.js",
+        "src/core/services/index.json",
+        "src/core/services/index.vue",
+        "src/core/services/index.scss",
+        "src/core/services/index.css"
+      ],
+      "@utils/*": ["src/core/utils/*"],
+      "@utils": [
+        "src/core/utils/index.js",
+        "src/core/utils/index.json",
+        "src/core/utils/index.vue",
+        "src/core/utils/index.scss",
+        "src/core/utils/index.css"
+      ],
+      "@router/*": ["src/router/*"],
+      "@router": [
+        "src/router/index.js",
+        "src/router/index.json",
+        "src/router/index.vue",
+        "src/router/index.scss",
+        "src/router/index.css"
+      ],
+      "@store/*": ["src/store/*"],
+      "@store": [
+        "src/store/index.js",
+        "src/store/index.json",
+        "src/store/index.vue",
+        "src/store/index.scss",
+        "src/store/index.css"
+      ],
+      "@use/*": ["src/use/*"],
+      "@use": [
+        "src/use/index.js",
+        "src/use/index.json",
+        "src/use/index.vue",
+        "src/use/index.scss",
+        "src/use/index.css"
+      ],
+      "@pages/*": ["src/pages/*"],
+      "@pages": [
+        "src/pages/index.js",
+        "src/pages/index.json",
+        "src/pages/index.vue",
+        "src/pages/index.scss",
+        "src/pages/index.css"
+      ],
+      "@examples/*": ["src/examples/*"],
+      "@examples": [
+        "src/examples/index.js",
+        "src/examples/index.json",
+        "src/examples/index.vue",
+        "src/examples/index.scss",
+        "src/examples/index.css"
+      ]
     }
-  },
-  "include": ["./src/**/*"],
-  "exclude": ["node_modules", "dist"]
+  }
 }

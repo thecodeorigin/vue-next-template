@@ -6,14 +6,14 @@
 </template>
 
 <script>
-import { defineComponent } from "vue";
-import { Navbar } from "@/core/components/layout";
+import { defineComponent } from 'vue'
+import { Navbar } from '@/core/components/layout'
 export default defineComponent({
-  name: "defaultLayout",
+  name: 'defaultLayout',
   components: {
-    Navbar
-  }
-});
+    Navbar,
+  },
+})
 </script>
 
 <style scoped></style>

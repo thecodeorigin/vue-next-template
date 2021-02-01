@@ -1,6 +1,6 @@
-import qs from "qs";
-import { $dev } from "@/core/utils/dev";
-import { $clientApi } from "@/core/services/client";
+import qs from 'qs'
+import { $dev } from '@utils/dev'
+import { $clientApi } from '@services/client'
 
 /**
  * Fetch many records
@@ -15,12 +15,12 @@ import { $clientApi } from "@/core/services/client";
  */
 const fetchMany = async (query = { page: 1, limit: 10 }) => {
   try {
-    const { data } = await $clientApi.get(`/posts?${qs.stringify(query)}`);
-    return data;
+    const { data } = await $clientApi.get(`/posts?${qs.stringify(query)}`)
+    return data
   } catch (err) {
-    $dev.error(err);
+    $dev.error(err)
   }
-};
+}
 
 /**
  * Fetch one record
@@ -31,50 +31,50 @@ const fetchMany = async (query = { page: 1, limit: 10 }) => {
  *
  * @returns {Promise<any>} API result
  */
-const fetchOne = async id => {
+const fetchOne = async (id) => {
   try {
-    const { data } = await $clientApi.get(`/posts/${id}`);
-    return data;
+    const { data } = await $clientApi.get(`/posts/${id}`)
+    return data
   } catch (err) {
-    $dev.error(err);
+    $dev.error(err)
   }
-};
+}
 
 /**
  * Create one record
  */
-const createOne = async form => {
+const createOne = async (form) => {
   try {
-    const { data } = await $clientApi.post(`/posts`, form);
-    return data;
+    const { data } = await $clientApi.post('/posts', form)
+    return data
   } catch (err) {
-    $dev.error(err);
+    $dev.error(err)
   }
-};
+}
 
 /**
  * Update one record
  */
 const updateOne = async (id, form) => {
   try {
-    const { data } = await $clientApi.put(`/posts/${id}`, form);
-    return data;
+    const { data } = await $clientApi.put(`/posts/${id}`, form)
+    return data
   } catch (err) {
-    $dev.error(err);
+    $dev.error(err)
   }
-};
+}
 
 /**
  * Delete specific record
  */
-const deleteOne = async id => {
+const deleteOne = async (id) => {
   try {
-    const { data } = await $clientApi.delete(`/posts/${id}`);
-    return data;
+    const { data } = await $clientApi.delete(`/posts/${id}`)
+    return data
   } catch (err) {
-    $dev.error(err);
+    $dev.error(err)
   }
-};
+}
 
 export default {
   /**
@@ -96,5 +96,5 @@ export default {
   /**
    * Delete one post
    */
-  deletePost: deleteOne
-};
+  deletePost: deleteOne,
+}

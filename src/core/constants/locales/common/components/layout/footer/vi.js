@@ -1,3 +1,3 @@
 export default {
-  title: "Đây là một footer"
-};
+  title: 'Đây là một footer',
+}

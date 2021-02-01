@@ -4,11 +4,11 @@
   </div>
 </template>
 <script>
-import { defineComponent } from "vue";
-import ExampleComponent from "../components/ExampleComponent.vue";
+import { defineComponent } from 'vue'
+import ExampleComponent from '../components/ExampleComponent.vue'
 export default defineComponent({
   components: {
-    ExampleComponent
-  }
-});
+    ExampleComponent,
+  },
+})
 </script>

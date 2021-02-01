@@ -4,7 +4,7 @@
   >
     <div>
       <span class=" text-white font-bold">
-        {{ $t("home.title") }}
+        {{ $t('home.title') }}
       </span>
     </div>
     <div>
@@ -18,16 +18,16 @@
 </template>
 
 <script>
-import { defineComponent } from "vue";
+import { defineComponent } from 'vue'
 export default defineComponent({
-  name: "Navbar",
+  name: 'Navbar',
   props: {},
   data() {
     return {
       //
-    };
-  }
-});
+    }
+  },
+})
 </script>
 
 <style></style>

@@ -10,6 +10,6 @@
  * @param { NavigationGuardNext } next
  */
 export const auth = (to, from, next) => {
-  console.log("[Auth middleware]", "Hello");
-  next();
-};
+  console.log('[Auth middleware]', 'Hello')
+  next()
+}

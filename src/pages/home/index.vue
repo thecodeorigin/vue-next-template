@@ -1,12 +1,12 @@
 <template>
   <div>
-    {{ $t("home.description") }}
+    {{ $t('home.description') }}
   </div>
 </template>
 <script>
-import { defineComponent, onMounted, onUnmounted, onUpdated } from "vue";
-import usePost from "@/use/post/crud";
-import useAuthor from "@/use/author/crud";
+import { defineComponent, onMounted, onUnmounted, onUpdated } from 'vue'
+import usePost from '@/use/post/crud'
+import useAuthor from '@/use/author/crud'
 
 export default defineComponent({
   components: {
@@ -14,28 +14,28 @@ export default defineComponent({
   },
   setup() {
     onMounted(() => {
-      usePost.mounted();
-      useAuthor.mounted();
-    });
+      usePost.mounted()
+      useAuthor.mounted()
+    })
     onUpdated(() => {
-      usePost.updated();
-      useAuthor.updated();
-    });
+      usePost.updated()
+      useAuthor.updated()
+    })
     onUnmounted(() => {
-      usePost.unmounted();
-      useAuthor.unmounted();
-    });
+      usePost.unmounted()
+      useAuthor.unmounted()
+    })
     return {
       ...usePost,
-      ...useAuthor
-    };
+      ...useAuthor,
+    }
   },
   async created() {
-    await this.fetchPosts();
+    await this.fetchPosts()
     // this.posts = await this.fetchPosts();
   },
   mounted() {
-    console.log("Mounted");
-  }
-});
+    console.log('Mounted')
+  },
+})
 </script>

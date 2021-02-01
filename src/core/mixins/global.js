@@ -14,13 +14,13 @@ export const globalMixin = {
       // eslint-disable-next-line no-useless-escape
       if (/^([a-zA-Z0-9\[\].?])*$/g.test(evalString)) {
         // eslint-disable-next-line no-eval
-        return eval("param?." + evalString);
+        return eval('param?.' + evalString)
       } else {
-        return null;
+        return null
       }
-    }
+    },
   },
   created() {
-    console.log("[Global mixin created]", "Hello");
-  }
-};
+    console.log('[Global mixin created]', 'Hello')
+  },
+}

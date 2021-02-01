@@ -5,30 +5,30 @@
 </template>
 
 <script>
-import { defineComponent } from "vue";
+import { defineComponent } from 'vue'
 // Import layout components here
 // Can't use 'default' for component's name
-import defaultLayout from "@/core/layouts/default.vue";
+import defaultLayout from '@layouts/default.vue'
 /**
  * Root component
  */
 export default defineComponent({
-  name: "Root",
+  name: 'Root',
   components: {
-    defaultLayout
+    defaultLayout,
   },
   data() {
     return {
-      layout: "defaultLayout"
-    };
+      layout: 'defaultLayout',
+    }
   },
   methods: {
     /**
      * Use this.$emit('layout', '[LAYOUT_NAME]') in your page component
      */
     updateLayout(layout) {
-      this.layout = layout;
-    }
-  }
-});
+      this.layout = layout
+    },
+  },
+})
 </script>

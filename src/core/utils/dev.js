@@ -4,10 +4,10 @@ export const $dev = {
    * @param  {...any} args
    */
   error: (...args) => {
-    if (process.env.NODE_ENV !== "production") {
-      console.error(...args);
+    if (process.env.NODE_ENV !== 'production') {
+      console.error(...args)
     } else {
-      console.error("Something is wrong");
+      console.error('Something is wrong')
     }
   },
   /**
@@ -15,10 +15,10 @@ export const $dev = {
    * @param  {...any} args
    */
   log: (...args) => {
-    if (process.env.NODE_ENV !== "production") {
-      console.log(...args);
+    if (process.env.NODE_ENV !== 'production') {
+      console.log(...args)
     } else {
-      console.log("Something is wrong");
+      console.log('Something is wrong')
     }
   },
   /**
@@ -26,10 +26,10 @@ export const $dev = {
    * @param  {...any} args
    */
   warn: (...args) => {
-    if (process.env.NODE_ENV !== "production") {
-      console.warn(...args);
+    if (process.env.NODE_ENV !== 'production') {
+      console.warn(...args)
     } else {
-      console.warn("Something is wrong");
+      console.warn('Something is wrong')
     }
-  }
-};
+  },
+}

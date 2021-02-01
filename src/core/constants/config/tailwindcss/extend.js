@@ -8,14 +8,14 @@ module.exports = {
   // backgroundAttachment: ["responsive"],
   // backgroundClip: ["responsive"],
   backgroundColor: [
-    "active"
+    'active',
     // "responsive",
     // "dark",
     // "group-hover",
     // "focus-within",
     // "hover",
     // "focus"
-  ]
+  ],
   // backgroundImage: ["responsive"],
   // backgroundOpacity: [
   //   "responsive",
@@ -169,4 +169,4 @@ module.exports = {
   // width: ["responsive"],
   // wordBreak: ["responsive"],
   // zIndex: ["responsive", "focus-within", "focus"]
-};
+}

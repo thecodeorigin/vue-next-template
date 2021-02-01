@@ -11,7 +11,7 @@
  */
 const mounted = () => {
   // Do something in mounted()
-};
+}
 
 /**
  * For registering updated() hook in setup
@@ -21,7 +21,7 @@ const mounted = () => {
  */
 const updated = () => {
   // Do something in updated()
-};
+}
 
 /**
  * For registering unmounted() hook in setup
@@ -31,7 +31,7 @@ const updated = () => {
  */
 const unmounted = () => {
   // Do something in unmounted()
-};
+}
 
 export default {
   /**
@@ -45,5 +45,5 @@ export default {
   /**
    * Hook function in composition, must be invoked in setup()
    */
-  unmounted
-};
+  unmounted,
+}

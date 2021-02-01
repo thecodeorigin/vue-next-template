@@ -1,5 +1,5 @@
 export default {
-  login: "Login",
-  logout: "Logout",
-  dashboard: "Dashboard"
-};
+  login: 'Login',
+  logout: 'Logout',
+  dashboard: 'Dashboard',
+}

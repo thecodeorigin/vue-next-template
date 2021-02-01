@@ -1,6 +1,6 @@
-import { createStore } from "vuex";
-import { home } from "./home";
-import { auth } from "./auth";
+import { createStore } from 'vuex'
+import { home } from './home'
+import { auth } from './auth'
 
 export const store = createStore({
   state: () => {},
@@ -10,6 +10,6 @@ export const store = createStore({
   // Import modules
   modules: {
     auth,
-    home
-  }
-});
+    home,
+  },
+})

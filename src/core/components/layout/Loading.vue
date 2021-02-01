@@ -30,7 +30,7 @@
   transform: scale(1.1);
 }
 .sk-folding-cube .sk-cube:before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;

@@ -20,9 +20,9 @@ export const examplePlugin = {
      * This is a breaking change from Vue 2 Vue.prototype
      * See more at: https://v3.vuejs.org/guide/migration/global-api.html#vue-prototype-replaced-by-config-globalproperties
      */
-    app.config.globalProperties.$examplePlugin = (componentName = "") => {
-      console.log("[Example plugin]", "Hello", componentName);
-      console.log("[Example plugin]", "[app]", app);
-    };
-  }
-};
+    app.config.globalProperties.$examplePlugin = (componentName = '') => {
+      console.log('[Example plugin]', 'Hello', componentName)
+      console.log('[Example plugin]', '[app]', app)
+    }
+  },
+}

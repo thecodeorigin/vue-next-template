@@ -14,18 +14,18 @@
  *
  * Personal oppinion: You should Vite for admin page for amazing build time, for a client page, use Vue CLI, Nuxt,...
  */
-import { createApp } from "vue";
-import { router } from "@/router";
-import { store } from "@/store";
-import { clientApiPlugin } from "@/core/services/client";
-import { authApiPlugin } from "@/core/services/auth";
-import { globalMixin } from "@/core/mixins/global";
-import { i18nPlugin } from "@/core/plugins/i18n";
-import { examplePlugin } from "@/core/plugins/example";
-import { exampleDIPlugin } from "@/core/plugins/exampleDI";
-import Root from "@/Root.vue";
-import "@/core/assets/css/main.css";
-import "@/core/assets/scss/main.scss";
+import { createApp } from 'vue'
+import { router } from '@router'
+import { store } from '@store'
+import { clientApiPlugin } from '@services/client'
+import { authApiPlugin } from '@services/auth'
+import { globalMixin } from '@mixins/global'
+import { i18nPlugin } from '@plugins/i18n'
+import { examplePlugin } from '@plugins/example'
+import { exampleDIPlugin } from '@plugins/exampleDI'
+import Root from '@/Root.vue'
+import '@assets/css/main.css'
+import '@assets/scss/main.scss'
 
 // Check the imported files for code explanation
 createApp(Root)
@@ -35,6 +35,6 @@ createApp(Root)
   .use(authApiPlugin)
   .use(i18nPlugin)
   .use(examplePlugin) // Used in home page
-  .provide("globalDI", exampleDIPlugin) // Used in home page
+  .provide('globalDI', exampleDIPlugin) // Used in home page
   .mixin(globalMixin)
-  .mount("#app");
+  .mount('#app')

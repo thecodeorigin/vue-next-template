@@ -1,7 +1,7 @@
-import qs from "qs";
-import { $dev } from "@/core/utils/dev";
-import { $clientApi } from "@/core/services/client";
-import { $authApi } from "@/core/services/auth";
+import qs from '@/examples/compositions/use-crud/qs'
+import { $dev } from '@/examples/compositions/use-crud/@/core/utils/dev'
+import { $clientApi } from '@/examples/compositions/use-crud/@/core/services/client'
+import { $authApi } from '@/examples/compositions/use-crud/@/core/services/auth'
 
 /**
  * Fetch many records
@@ -16,12 +16,12 @@ import { $authApi } from "@/core/services/auth";
  */
 const fetchMany = async (query = { page: 1, limit: 10 }) => {
   try {
-    const { data } = await $clientApi.get(`/examples?${qs.stringify(query)}`);
-    return data;
+    const { data } = await $clientApi.get(`/examples?${qs.stringify(query)}`)
+    return data
   } catch (err) {
-    $dev.error(err);
+    $dev.error(err)
   }
-};
+}
 
 /**
  * Fetch one record
@@ -32,50 +32,50 @@ const fetchMany = async (query = { page: 1, limit: 10 }) => {
  *
  * @returns {Promise<any>} API result
  */
-const fetchOne = async id => {
+const fetchOne = async (id) => {
   try {
-    const { data } = await $clientApi.get(`/examples/${id}`);
-    return data;
+    const { data } = await $clientApi.get(`/examples/${id}`)
+    return data
   } catch (err) {
-    $dev.error(err);
+    $dev.error(err)
   }
-};
+}
 
 /**
  * Create one record
  */
-const createOne = async form => {
+const createOne = async (form) => {
   try {
-    const { data } = await $authApi.example(`/examples`, form);
-    return data;
+    const { data } = await $authApi.example(`/examples`, form)
+    return data
   } catch (err) {
-    $dev.error(err);
+    $dev.error(err)
   }
-};
+}
 
 /**
  * Update one record
  */
 const updateOne = async (id, form) => {
   try {
-    const { data } = await $authApi.put(`/examples/${id}`, form);
-    return data;
+    const { data } = await $authApi.put(`/examples/${id}`, form)
+    return data
   } catch (err) {
-    $dev.error(err);
+    $dev.error(err)
   }
-};
+}
 
 /**
  * Delete specific record
  */
-const deleteOne = async id => {
+const deleteOne = async (id) => {
   try {
-    const { data } = await $authApi.delete(`/examples/${id}`);
-    return data;
+    const { data } = await $authApi.delete(`/examples/${id}`)
+    return data
   } catch (err) {
-    $dev.error(err);
+    $dev.error(err)
   }
-};
+}
 
 export default {
   /**
@@ -97,5 +97,5 @@ export default {
   /**
    * Delete one example
    */
-  deleteExample: deleteOne
-};
+  deleteExample: deleteOne,
+}

@@ -8,5 +8,5 @@ export const example = {
   getters,
   mutations,
   actions,
-  modules: {}
+  modules: {},
 }

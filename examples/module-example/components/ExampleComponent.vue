@@ -5,16 +5,16 @@
 </template>
 
 <script>
-import { defineComponent } from "vue";
+import { defineComponent } from 'vue'
 export default defineComponent({
-  name: "ExampleComponent",
+  name: 'ExampleComponent',
   props: {
-    msg: String
+    msg: String,
   },
   data() {
     return {
       //
-    };
-  }
-});
+    }
+  },
+})
 </script>
