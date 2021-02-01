@@ -17,7 +17,7 @@
   "import $clientApi": {
     "scope": "javascript",
     "prefix": "import clientApi",
-    "body": ["import { $$clientApi } from '@services/client';",],
+    "body": ["import { $$clientApi } from '@services/client'",],
   },
   "authApi": {
     "scope": "javascript",
@@ -37,6 +37,6 @@
   "import $authApi": {
     "scope": "javascript",
     "prefix": "import authApi",
-    "body": ["import { $$authApi } from '@services/auth';",],
+    "body": ["import { $$authApi } from '@services/auth'",],
   },
 }
