@@ -22,12 +22,12 @@
       "});",
       "</script>",
       "<style lang=\"scss\">",
-      "@import \"@/src/core/assets/scss/global/all.scss\"",
+      "@import '@assets/scss/global/all.scss';",
       ".${0}-component {",
       "}",
       "</style>",
       "<style lang=\"scss\" scoped>",
-      "@import \"@/src/core/assets/scss/global/all.scss\"",
+      "@import '@assets/scss/global/all.scss';",
       ".${0}-component {",
       "}",
       "</style>"
@@ -61,7 +61,7 @@
     "prefix": "style:scss",
     "body": [
       "<style lang=\"scss\">",
-      "@import \"@/src/core/assets/scss/global/all.scss\";",
+      "@import '@assets/scss/global/all.scss';",
       "</style>",
     ],
     "description": "Style tag in with defined mixins in scss/global"
@@ -71,7 +71,7 @@
     "prefix": "style:scss scoped",
     "body": [
       "<style lang=\"scss\" scoped>",
-      "@import \"@/src/core/assets/scss/global/all.scss\";",
+      "@import '@assets/scss/global/all.scss';",
       "</style>",
     ],
     "description": "Scoped style tag in with defined mixins in scss/global"

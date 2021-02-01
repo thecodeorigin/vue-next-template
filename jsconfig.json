@@ -2,7 +2,7 @@
   "baseUrl": ".",
   "include": ["src/**/*", "examples"],
   "exclude": ["node_modules", "dist"],
-  "typeAcquisition": { "exclude": ["dotenv"] },
+  "typeAcquisition": { "exclude": ["dotenv", "source-map"] },
   "compilerOptions": {
     "baseUrl": ".",
     "target": "esnext",
