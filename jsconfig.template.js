@@ -8,7 +8,7 @@ module.exports = {
   include: ['src/**/*', 'examples'],
   exclude: ['node_modules', 'dist'],
   typeAcquisition: {
-    exclude: ['dotenv', 'source-map'], // Fix /node_modules/dotenv/types not found
+    exclude: ['dotenv', 'source-map'], // Fix /node_modules/.../types not found
   },
   compilerOptions: {
     baseUrl: '.',
