@@ -9,7 +9,7 @@
       "<script>",
       "import { defineComponent } from \"vue\";",
       "export default defineComponent({",
-      "\tname: \"${0}\",",
+      "\tname: '${0}',",
       "\tprops: {},",
       "\tsetup(props) {",
       "\t\t//",
