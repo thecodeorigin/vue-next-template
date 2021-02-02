@@ -23,12 +23,14 @@ import { globalMixin } from '@mixins/global'
 import { i18nPlugin } from '@plugins/i18n'
 import { examplePlugin } from '@plugins/example'
 import { exampleDIPlugin } from '@plugins/exampleDI'
+import { utils } from '@utils'
 import Root from '@/Root.vue'
 import '@assets/css/main.css'
 import '@assets/scss/main.scss'
 
 // Check the imported files for code explanation
 createApp(Root)
+  .use(utils)
   .use(store)
   .use(router)
   .use(clientApiPlugin)

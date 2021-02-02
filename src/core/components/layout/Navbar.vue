@@ -9,7 +9,7 @@
     </div>
     <div>
       <button
-        class="py-2 px-4 bg-success-500 hover:bg-success-600 active:bg-success-700 text-white font-semibold rounded-lg shadow-md focus:outline-none duration-300"
+        class="py-2 px-4 bg-success-500 hover:bg-success-600 active:bg-success-700 text-white font-semibold rounded-lg shadow-md outline-none focus:outline-none duration-300"
       >
         Some button
       </button>

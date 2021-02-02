@@ -1,3 +1,8 @@
+// This will be required in runtime
+// This can slow the app down due to recursive programing and stuff
+// Solution: Like nuxt, i'm figuring a way to build these into files first,
+// so they can be required in compile time instead runtime
+
 //  This file using require.context() to get in all of the folder recursively and
 //  require all the en.js and vi.js files
 
