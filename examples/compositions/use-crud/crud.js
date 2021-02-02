@@ -1,7 +1,7 @@
-import qs from '@/examples/compositions/use-crud/qs'
-import { $dev } from '@/examples/compositions/use-crud/@/core/utils/dev'
-import { $clientApi } from '@/examples/compositions/use-crud/@/core/services/client'
-import { $authApi } from '@/examples/compositions/use-crud/@/core/services/auth'
+import qs from 'qs'
+import { $dev } from '@utils/functions'
+import { $clientApi } from '@services/client'
+import { $authApi } from '@services/auth'
 
 /**
  * Fetch many records

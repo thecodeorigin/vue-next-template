@@ -1,4 +1,4 @@
-export const $dev = {
+export default {
   /**
    * Equivalent to console.error but in dev mode only
    * @param  {...any} args

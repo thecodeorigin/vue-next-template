@@ -13,13 +13,16 @@ const en = {}
 const vi = {}
 
 const requireModule = require.context('./', true, /\.js$/)
-requireModule.keys().forEach(requireModule)
 requireModule.keys().forEach((fileName) => {
   if (!fileName.includes('index.js')) {
     const temp = fileName.replace(/(\.\/|\.js)/g, '').split('/')
     const moduleName = temp.length > 1 ? temp[temp.length - 2] : temp[0]
+
+    // If file is en.js, register it as an english module
     if (fileName.includes('en.js')) {
       en[moduleName] = requireModule(fileName).default
+
+      // If file is vi.js, register it as an vietnamese module
     } else if (fileName.includes('vi.js')) {
       vi[moduleName] = requireModule(fileName).default
     }

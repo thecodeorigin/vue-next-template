@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "start": "vue-cli-service start",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
@@ -12,6 +13,7 @@
     "autoprefixer": "^9",
     "axios": "^0.21.1",
     "core-js": "^3.6.5",
+    "lodash": "^4.17.20",
     "moment": "^2.29.1",
     "postcss": "^7",
     "qs": "^6.9.6",

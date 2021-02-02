@@ -8,6 +8,7 @@ const aliases = {
   '@': 'src',
   '@assets': 'src/core/assets',
   '@components': 'src/core/components',
+  '@theme': 'src/core/components/theme',
   '@constants': 'src/core/constants',
   '@layouts': 'src/core/layouts',
   '@middleware': 'src/core/middleware',
@@ -19,7 +20,7 @@ const aliases = {
   '@store': 'src/store',
   '@use': 'src/use',
   '@pages': 'src/pages',
-  '@examples': 'src/examples',
+  '@examples': 'examples',
 }
 
 module.exports = {

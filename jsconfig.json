@@ -32,6 +32,14 @@
         "src/core/components/index.scss",
         "src/core/components/index.css"
       ],
+      "@theme/*": ["src/core/components/theme/*"],
+      "@theme": [
+        "src/core/components/theme/index.js",
+        "src/core/components/theme/index.json",
+        "src/core/components/theme/index.vue",
+        "src/core/components/theme/index.scss",
+        "src/core/components/theme/index.css"
+      ],
       "@constants/*": ["src/core/constants/*"],
       "@constants": [
         "src/core/constants/index.js",
@@ -120,13 +128,13 @@
         "src/pages/index.scss",
         "src/pages/index.css"
       ],
-      "@examples/*": ["src/examples/*"],
+      "@examples/*": ["examples/*"],
       "@examples": [
-        "src/examples/index.js",
-        "src/examples/index.json",
-        "src/examples/index.vue",
-        "src/examples/index.scss",
-        "src/examples/index.css"
+        "examples/index.js",
+        "examples/index.json",
+        "examples/index.vue",
+        "examples/index.scss",
+        "examples/index.css"
       ]
     }
   }

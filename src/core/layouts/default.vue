@@ -7,7 +7,7 @@
 
 <script>
 import { defineComponent } from 'vue'
-import { Navbar } from '@/core/components/layout'
+import { Navbar } from '@components/layout'
 export default defineComponent({
   name: 'defaultLayout',
   components: {

@@ -1,5 +1,5 @@
 import qs from 'qs'
-import { $dev } from '@utils/dev'
+import { $dev } from '@utils/functions'
 import { $clientApi } from '@services/client'
 
 /**
