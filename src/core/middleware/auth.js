@@ -1,3 +1,4 @@
+// Midlewares use beforeEach() in router
 /**
  * @typedef {import("vue-router").RouteLocationNormalized} RouteLocationNormalized
  * @typedef {import("vue-router").NavigationGuardNext} NavigationGuardNext

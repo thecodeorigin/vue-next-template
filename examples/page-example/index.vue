@@ -1,10 +1,10 @@
 <template>
-  <div class="ExampleComponent"></div>
+  <div class="examplePageComponent"></div>
 </template>
 <script>
 import { defineComponent } from 'vue'
 export default defineComponent({
-  name: 'Example',
+  name: 'examplePage',
   props: {},
   // eslint-disable-next-line no-unused-vars
   setup(props) {
@@ -19,13 +19,13 @@ export default defineComponent({
 </script>
 <style lang="scss">
 @import '@assets/scss/global/all.scss';
-.exampleComponent {
+.examplePageComponent {
   //
 }
 </style>
 <style lang="scss" scoped>
 @import '@assets/scss/global/all.scss';
-.exampleComponent {
+.examplePageComponent {
   //
 }
 </style>
