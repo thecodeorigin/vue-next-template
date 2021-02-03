@@ -30,5 +30,8 @@ export default defineComponent({
       this.layout = layout
     },
   },
+  created() {
+    console.log(this.$store.state)
+  },
 })
 </script>

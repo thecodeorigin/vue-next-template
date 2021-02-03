@@ -1,8 +1,4 @@
-// This will be required in runtime
-// This can slow the app down due to recursive programing and stuff
-// Solution: Like nuxt, i'm figuring a way to build these into files first,
-// so they can be required in compile time instead runtime
-
+/* eslint-disable prettier/prettier */
 //  This file using require.context() to get in all of the folder recursively and
 //  require all the en.js and vi.js files
 
@@ -12,20 +8,24 @@
 const en = {}
 const vi = {}
 
-const requireModule = require.context('./', true, /\.js$/)
+// See docs: https://webpack.js.org/guides/dependency-management/#context-module-api
+const requireModule = require.context('./', true, /^(?!.*index).*\.js$/ /* Every javascript file except index.js file */)
 requireModule.keys().forEach((fileName) => {
-  if (!fileName.includes('index.js')) {
-    const temp = fileName.replace(/(\.\/|\.js)/g, '').split('/')
-    const moduleName = temp.length > 1 ? temp[temp.length - 2] : temp[0]
 
-    // If file is en.js, register it as an english module
-    if (fileName.includes('en.js')) {
-      en[moduleName] = requireModule(fileName).default
+  const module = requireModule(fileName).default
 
-      // If file is vi.js, register it as an vietnamese module
-    } else if (fileName.includes('vi.js')) {
-      vi[moduleName] = requireModule(fileName).default
-    }
+  const temp = fileName.replace(/(\.\/|\.js)/g /* Remove "./" and ".js" */, '').split('/')
+  const moduleName = temp.length > 1 ? temp[temp.length - 2] : temp[0]
+
+  switch (temp[temp.length - 1]) {
+    case 'en':
+      en[moduleName] = module
+      break;
+    case 'vi':
+      vi[moduleName] = module
+      break;
+    default:
+      break;
   }
 })
 
