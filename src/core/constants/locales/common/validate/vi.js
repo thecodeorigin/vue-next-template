@@ -16,6 +16,8 @@ export default {
   any: 'Trường này mang kiểu any',
   max: 'Trường này phải bé hơn',
   min: 'Trường này phải lớn hơn ',
+  min_length: 'Trường này phải ngắn hơn',
+  max_length: 'Trường này phải dài hơn',
   length: 'Trường này phải là một chuỗi dài bằng',
   alpha: 'Trường này chỉ được chứa các chữ cái',
   alpha_dash: 'Trường này chỉ được chứa các chữ cái và dấu gạch dưới',

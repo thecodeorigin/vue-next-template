@@ -3,7 +3,7 @@
     {{ $t('home.description') }}
     <form>
       <input
-        v-validate:focus.email.required="validateHandler"
+        v-validate:focus.min_length:10.required="validateHandler"
         type="text"
         v-model="something"
         placeholder="Type something"
@@ -15,7 +15,7 @@
       :key="error"
       class="font-bold text-danger-default block"
     >
-      {{ $t(error) }}
+      {{ $t(error.message) }}{{ error.arg }}
     </span>
   </div>
 </template>

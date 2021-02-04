@@ -7,4 +7,24 @@
     ],
     "description": "Authentication directive, which will display, disable component base on role's permissions"
   },
+  "v-validate directive": {
+    "scope": "vue-html",
+    "prefix": "v-validate",
+    "body": ["v-validate"],
+  },
+  "v-validate.email directive": {
+    "scope": "vue-html",
+    "prefix": "v-validate.email",
+    "body": ["v-validate.email=\"${0}\""],
+  },
+  "v-validate.required directive": {
+    "scope": "vue-html",
+    "prefix": "v-validate.required",
+    "body": ["v-validate.required"],
+  },
+  "v-validate.string directive": {
+    "scope": "vue-html",
+    "prefix": "v-validate.string",
+    "body": ["v-validate.string"],
+  },
 }

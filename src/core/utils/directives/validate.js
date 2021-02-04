@@ -1,6 +1,15 @@
 // Vue 3 directive is a breaking change
 // See docs: https://v3.vuejs.org/guide/migration/custom-directives.html#_3-x-syntax
+
 import rules from '@constants/validation'
+// This directive is made for some edge cases when you simply want to validate the input value without using any wrapper component
+// If you feel comfortable enough with other validation method supported by your UI framework, validation library, feel free to skip this feature
+// Usage: <input v-validate:focus.email.required="validateHandler" />
+// methods: {
+//   validateHandler(errors) {
+//     this.errors = errors
+//   }
+// }
 let input = null
 let rulesSet = null
 export default {
@@ -63,7 +72,10 @@ export default {
                 rules[pattern](input.value)
           // If something wrong, push it in errors
           if (!result) {
-            errors.push(`validate.${pattern}`)
+            errors.push({
+              message: `validate.${pattern}`,
+              arg,
+            })
           }
         })
         // Invoke passed in method
