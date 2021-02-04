@@ -1,6 +1,22 @@
 <template>
   <div>
     {{ $t('home.description') }}
+    <form>
+      <input
+        v-validate:focus.email.required="validateHandler"
+        type="text"
+        v-model="something"
+        placeholder="Type something"
+        class="bg-gray-100 p-2 rounded-lg shadow-sm"
+      />
+    </form>
+    <span
+      v-for="error in errors"
+      :key="error"
+      class="font-bold text-danger-default block"
+    >
+      {{ $t(error) }}
+    </span>
   </div>
 </template>
 <script>
@@ -29,6 +45,17 @@ export default defineComponent({
       ...usePost,
       ...useAuthor,
     }
+  },
+  data() {
+    return {
+      something: null,
+      errors: [],
+    }
+  },
+  methods: {
+    validateHandler(errors) {
+      this.errors = errors
+    },
   },
   async created() {
     await this.fetchPosts()
