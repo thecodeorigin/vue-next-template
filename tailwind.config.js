@@ -2,7 +2,9 @@ const colors = require('./src/core/constants/config/tailwindcss/colors')
 const screens = require('./src/core/constants/config/tailwindcss/screens')
 const extend = require('./src/core/constants/config/tailwindcss/extend')
 module.exports = {
-  darkMode: false, // or 'media' or 'class'
+  // See tailwindCSS darkmode docs: https://tailwindcss.com/docs/dark-mode
+  // Use with other variants: https://tailwindcss.com/docs/dark-mode#stacking-with-other-variants
+  darkMode: 'class', // or false or 'media'
   theme: {
     extend: {
       screens,

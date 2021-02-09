@@ -1,6 +1,6 @@
 module.exports = {
   'theme-1': {
-    default: 'var(--color-theme-1)',
+    DEFAULT: 'var(--color-theme-1)',
     50: 'var(--color-theme-1-50)',
     100: 'var(--color-theme-1-100)',
     200: 'var(--color-theme-1-200)',
@@ -13,7 +13,7 @@ module.exports = {
     900: 'var(--color-theme-1-900)',
   },
   'theme-2': {
-    default: 'var(--color-theme-2)',
+    DEFAULT: 'var(--color-theme-2)',
     50: 'var(--color-theme-2-50)',
     100: 'var(--color-theme-2-100)',
     200: 'var(--color-theme-2-200)',
@@ -26,7 +26,7 @@ module.exports = {
     900: 'var(--color-theme-2-900)',
   },
   'theme-3': {
-    default: 'var(--color-theme-3)',
+    DEFAULT: 'var(--color-theme-3)',
     50: 'var(--color-theme-3-50)',
     100: 'var(--color-theme-3-100)',
     200: 'var(--color-theme-3-200)',
@@ -39,7 +39,7 @@ module.exports = {
     900: 'var(--color-theme-3-900)',
   },
   'theme-4': {
-    default: 'var(--color-theme-4)',
+    DEFAULT: 'var(--color-theme-4)',
     50: 'var(--color-theme-4-50)',
     100: 'var(--color-theme-4-100)',
     200: 'var(--color-theme-4-200)',
@@ -52,7 +52,7 @@ module.exports = {
     900: 'var(--color-theme-4-900)',
   },
   'theme-5': {
-    default: 'var(--color-theme-5)',
+    DEFAULT: 'var(--color-theme-5)',
     50: 'var(--color-theme-5-50)',
     100: 'var(--color-theme-5-100)',
     200: 'var(--color-theme-5-200)',
@@ -65,7 +65,7 @@ module.exports = {
     900: 'var(--color-theme-5-900)',
   },
   gray: {
-    default: 'var(--color-gray)',
+    DEFAULT: 'var(--color-gray)',
     50: 'var(--color-gray-50)',
     100: 'var(--color-gray-100)',
     200: 'var(--color-gray-200)',
@@ -78,7 +78,7 @@ module.exports = {
     900: 'var(--color-gray-900)',
   },
   primary: {
-    default: 'var(--color-primary)',
+    DEFAULT: 'var(--color-primary)',
     50: 'var(--color-primary-50)',
     100: 'var(--color-primary-100)',
     200: 'var(--color-primary-200)',
@@ -91,7 +91,7 @@ module.exports = {
     900: 'var(--color-primary-900)',
   },
   secondary: {
-    default: 'var(--color-secondary)',
+    DEFAULT: 'var(--color-secondary)',
     50: 'var(--color-secondary-50)',
     100: 'var(--color-secondary-100)',
     200: 'var(--color-secondary-200)',
@@ -104,7 +104,7 @@ module.exports = {
     900: 'var(--color-secondary-900)',
   },
   success: {
-    default: 'var(--color-success)',
+    DEFAULT: 'var(--color-success)',
     50: 'var(--color-success-50)',
     100: 'var(--color-success-100)',
     200: 'var(--color-success-200)',
@@ -117,7 +117,7 @@ module.exports = {
     900: 'var(--color-success-900)',
   },
   danger: {
-    default: 'var(--color-danger)',
+    DEFAULT: 'var(--color-danger)',
     50: 'var(--color-danger-50)',
     100: 'var(--color-danger-100)',
     200: 'var(--color-danger-200)',
@@ -130,7 +130,7 @@ module.exports = {
     900: 'var(--color-danger-900)',
   },
   warning: {
-    default: 'var(--color-warning)',
+    DEFAULT: 'var(--color-warning)',
     50: 'var(--color-warning-50)',
     100: 'var(--color-warning-100)',
     200: 'var(--color-warning-200)',
@@ -143,7 +143,7 @@ module.exports = {
     900: 'var(--color-warning-900)',
   },
   info: {
-    default: 'var(--color-info)',
+    DEFAULT: 'var(--color-info)',
     50: 'var(--color-info-50)',
     100: 'var(--color-info-100)',
     200: 'var(--color-info-200)',

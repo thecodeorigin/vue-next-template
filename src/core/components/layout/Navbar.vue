@@ -1,7 +1,5 @@
 <template>
-  <nav
-    class="relative flex justify-between items-center h-16 bg-primary-default px-8"
-  >
+  <nav class="relative flex justify-between items-center h-16 bg-primary px-8">
     <div>
       <span class=" text-white font-bold">
         {{ $t('home.title') }}

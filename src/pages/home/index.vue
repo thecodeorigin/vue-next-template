@@ -13,7 +13,7 @@
     <span
       v-for="error in errors"
       :key="error"
-      class="font-bold text-danger-default block"
+      class="font-bold text-danger block"
     >
       {{ $t(error.message) }}{{ error.arg }}
     </span>

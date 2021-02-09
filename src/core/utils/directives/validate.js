@@ -13,9 +13,7 @@ import rules from '@constants/validation'
 let input = null
 let rulesSet = null
 export default {
-  // eslint-disable-next-line no-unused-vars
   beforeMount(el, binding) {
-    console.log(binding)
     input =
       el.getElementsByTagName('input')[0] ?? el.tagName === 'INPUT' ? el : null
     if (input) {
@@ -45,7 +43,7 @@ export default {
         // Handle invalid rule like 'emal', 'requied', 'weird-strange-rule', ...
         if (!Object.keys(rules).includes(pattern)) {
           throw new Error(
-            `v-pattern doesn't have "${pattern}" as a valid rules in "@constants/validation"`
+            `v-validate doesn't have "${pattern}" as a valid rules in "@constants/validation"`
           )
         }
         if (rules[pattern] instanceof RegExp && arg) {
@@ -87,7 +85,7 @@ export default {
       if (binding.arg) input.addEventListener(binding.arg, validate)
     } else {
       throw new Error(
-        'v-pattern must be used on an <input> tag or on an element that has only one <input> tag in it'
+        'v-validate must be used on an <input> tag or on an element that has only one <input> tag in it'
       )
     }
   },

@@ -9,9 +9,7 @@ import { defineComponent } from 'vue'
 // Import layout components here
 // Can't use 'default' for component's name
 import defaultLayout from '@layouts/default.vue'
-/**
- * Root component
- */
+// Root component
 export default defineComponent({
   name: 'Root',
   components: {
