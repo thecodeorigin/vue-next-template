@@ -21,6 +21,7 @@ import { clientApiPlugin } from '@services/client'
 import { authApiPlugin } from '@services/auth'
 import { globalMixin } from '@mixins/global'
 import { i18nPlugin } from '@plugins/i18n'
+import { eventBusPlugin } from '@plugins/mitt'
 import { examplePlugin } from '@plugins/example'
 import { exampleDIPlugin } from '@plugins/exampleDI'
 import { utils } from '@utils'
@@ -36,6 +37,7 @@ createApp(Root)
   .use(clientApiPlugin)
   .use(authApiPlugin)
   .use(i18nPlugin)
+  .use(eventBusPlugin)
   .use(examplePlugin) // Used in home page
   .provide('globalDI', exampleDIPlugin) // Used in home page
   .mixin(globalMixin)

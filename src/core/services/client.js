@@ -4,6 +4,9 @@ import { axiosConfig } from './config'
 
 /**
  * Client api call with Axios
+ *
+ * Custom localization is unavaiable
+ * use try/catch block to handle thrown exception and localize the message
  */
 export const $clientApi = axios.create(axiosConfig)
 // $clientApi.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
@@ -27,6 +30,6 @@ $clientApi.interceptors.response.use(
 
 export const clientApiPlugin = {
   install(app) {
-    app.config.globalProperties.$authApi = $clientApi
+    app.config.globalProperties.$clientApi = $clientApi
   },
 }

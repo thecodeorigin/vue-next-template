@@ -3,6 +3,12 @@ import { axiosConfig } from './config'
 // import store from '../store'
 // Using composition API, we don't install axios as a plugin
 
+/**
+ * Authenticated api call with Axios
+ *
+ * Custom localization is unavaiable
+ * use try/catch block to handle thrown exception and localize the message
+ */
 export const $authApi = axios.create(axiosConfig)
 
 // $authApi.defaults.headers.common['Authorization'] = store.auth.data.token;
