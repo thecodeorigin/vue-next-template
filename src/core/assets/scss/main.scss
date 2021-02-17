@@ -27,3 +27,25 @@
 // xxs
 // Double extra small devices (phones, 320px and up)
 @media (min-width: 320px) {  }
+
+// 2xl
+// Double extra large devices (large desktops, 1536px and below)
+@media (max-width: 1535px) {  }
+// xl
+// Extra large devices (large desktops, 1280px and below)
+@media (max-width: 1279px) {  }
+// lg
+// Large devices (large tablets, 1024px and below)
+@media (max-width: 1023px) {  }
+// md
+// Medium devices (tablets, 768px and below)
+@media (max-width: 767px) {  }
+// sm
+// Small devices (small tablets, 640px and below)
+@media (max-width: 639px) {  }
+// xs
+// Extra small devices (large phones, 576px and below)
+@media (max-width: 575px) {  }
+// xxs
+// Double extra small devices (phones, 320px and below)
+@media (max-width: 319px) {  }
