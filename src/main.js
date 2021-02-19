@@ -17,17 +17,22 @@
 import { createApp } from 'vue'
 import { router } from '@router'
 import { store } from '@store'
+// Services
 import { clientApiPlugin } from '@services/client'
 import { authApiPlugin } from '@services/auth'
+// Mixins
 import { globalMixin } from '@mixins/global'
+// Plugins
 import { i18nPlugin } from '@plugins/i18n'
 import { eventBusPlugin } from '@plugins/mitt'
 import { examplePlugin } from '@plugins/example'
 import { exampleDIPlugin } from '@plugins/exampleDI'
+import { errorHandlingPlugin } from '@plugins/error'
+//
 import { utils } from '@utils'
 import Root from '@/Root.vue'
-import '@assets/css/main.css'
-import '@assets/scss/main.scss'
+import '@core/assets/css/main.css'
+import '@core/assets/scss/main.scss'
 
 // Check the imported files for code explanation
 createApp(Root)
@@ -38,6 +43,7 @@ createApp(Root)
   .use(authApiPlugin)
   .use(i18nPlugin)
   .use(eventBusPlugin)
+  .use(errorHandlingPlugin)
   .use(examplePlugin) // Used in home page
   .provide('globalDI', exampleDIPlugin) // Used in home page
   .mixin(globalMixin)

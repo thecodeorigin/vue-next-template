@@ -1,8 +1,13 @@
 import about from '@pages/about/config'
 import home from '@pages/home/config'
+// Sandbox
+import sandbox from '@pages/sandbox/config'
+// Auth pages
 import authForgotPassword from '@pages/auth/forgot-password/config'
 import authSignup from '@pages/auth/signup/config'
 import authSignin from '@pages/auth/signin/config'
+// Errors
+import errorPages from '@pages/error/config'
 import { createRouter, createWebHistory } from 'vue-router'
 import { auth } from '@middleware/auth'
 
@@ -11,6 +16,9 @@ import { auth } from '@middleware/auth'
  * @type {Array<RouteRecordRaw>}
  */
 const routes = [
+  ...errorPages.routes,
+  ...sandbox.routes,
+  // Pages
   ...about.routes,
   ...home.routes,
   // Auth pages

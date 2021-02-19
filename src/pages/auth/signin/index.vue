@@ -17,15 +17,3 @@ export default defineComponent({
   },
 })
 </script>
-<style lang="scss">
-@import '@assets/scss/global/all.scss';
-.signinPageComponent {
-  //
-}
-</style>
-<style lang="scss" scoped>
-@import '@assets/scss/global/all.scss';
-.signinPageComponent {
-  //
-}
-</style>

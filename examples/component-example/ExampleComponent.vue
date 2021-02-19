@@ -18,13 +18,13 @@ export default defineComponent({
 })
 </script>
 <style lang="scss">
-@import '@assets/scss/global/all.scss';
+@import '@core/assets/scss/global/all.scss';
 .exampleComponent {
   //
 }
 </style>
 <style lang="scss" scoped>
-@import '@assets/scss/global/all.scss';
+@import '@core/assets/scss/global/all.scss';
 .exampleComponent {
   //
 }

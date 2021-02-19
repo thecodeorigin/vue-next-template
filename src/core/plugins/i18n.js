@@ -1,5 +1,5 @@
 import { createI18n } from 'vue-i18n'
-import localeModules from '@constants/locales'
+import localeModules from '@locales'
 export const i18nPlugin = createI18n({
   locale: 'en', // set locale
   fallbackLocale: 'en', // set fallback locale

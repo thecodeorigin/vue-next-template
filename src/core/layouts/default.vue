@@ -7,7 +7,7 @@
 
 <script>
 import { defineComponent } from 'vue'
-import { Navbar } from '@components/layout'
+import { Navbar } from '@common/layout'
 export default defineComponent({
   name: 'defaultLayout',
   components: {
@@ -15,5 +15,3 @@ export default defineComponent({
   },
 })
 </script>
-
-<style scoped></style>
