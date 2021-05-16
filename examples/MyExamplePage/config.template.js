@@ -1,16 +1,17 @@
-import index from './index.vue'
+import index from './index.template'
 /**
- * @typedef {import('vue-router').RouteRecordRaw} RouteRecordRaw
+ * @typedef {import('@examples/MyExamplePage/vue-router').RouteRecordRaw} RouteRecordRaw
  * @type {Array<RouteRecordRaw>}
  */
 export const routes = [
   {
-    path: '/',
+    path: '/example',
     component: index,
     meta: {
-      auth: false,
+      auth: true,
       permissions: ['ALL'],
     },
   },
 ]
+
 export default { routes }

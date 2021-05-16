@@ -38,6 +38,6 @@
   "import $dev": {
     "scope": "javascript",
     "prefix": "import dev",
-    "body": ["import { $$dev } from '@utils/functions'",],
+    "body": ["import dev from '@utils/functions/dev'",],
   },
 }

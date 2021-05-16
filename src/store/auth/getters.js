@@ -1,1 +1,5 @@
-export const getters = {}
+export const getters = {
+  currentUser(state) {
+    return state.data
+  },
+}

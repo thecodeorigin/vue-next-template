@@ -16,37 +16,13 @@
         "src/index.scss",
         "src/index.css"
       ],
-      "@assets/*": ["src/assets/*"],
-      "@assets": [
-        "src/assets/index.js",
-        "src/assets/index.json",
-        "src/assets/index.vue",
-        "src/assets/index.scss",
-        "src/assets/index.css"
-      ],
-      "@components/*": ["src/components/*"],
-      "@components": [
-        "src/components/index.js",
-        "src/components/index.json",
-        "src/components/index.vue",
-        "src/components/index.scss",
-        "src/components/index.css"
-      ],
-      "@common/*": ["src/components/common/*"],
-      "@common": [
-        "src/components/common/index.js",
-        "src/components/common/index.json",
-        "src/components/common/index.vue",
-        "src/components/common/index.scss",
-        "src/components/common/index.css"
-      ],
-      "@uncommon/*": ["src/components/uncommon/*"],
-      "@uncommon": [
-        "src/components/uncommon/index.js",
-        "src/components/uncommon/index.json",
-        "src/components/uncommon/index.vue",
-        "src/components/uncommon/index.scss",
-        "src/components/uncommon/index.css"
+      "@core/*": ["src/core/*"],
+      "@core": [
+        "src/core/index.js",
+        "src/core/index.json",
+        "src/core/index.vue",
+        "src/core/index.scss",
+        "src/core/index.css"
       ],
       "@locales/*": ["src/locales/*"],
       "@locales": [
@@ -72,6 +48,14 @@
         "src/router/index.scss",
         "src/router/index.css"
       ],
+      "@styles/*": ["src/styles/*"],
+      "@styles": [
+        "src/styles/index.js",
+        "src/styles/index.json",
+        "src/styles/index.vue",
+        "src/styles/index.scss",
+        "src/styles/index.css"
+      ],
       "@store/*": ["src/store/*"],
       "@store": [
         "src/store/index.js",
@@ -87,22 +71,6 @@
         "src/use/index.vue",
         "src/use/index.scss",
         "src/use/index.css"
-      ],
-      "@examples/*": ["examples/*"],
-      "@examples": [
-        "examples/index.js",
-        "examples/index.json",
-        "examples/index.vue",
-        "examples/index.scss",
-        "examples/index.css"
-      ],
-      "@core/*": ["src/core/*"],
-      "@core": [
-        "src/core/index.js",
-        "src/core/index.json",
-        "src/core/index.vue",
-        "src/core/index.scss",
-        "src/core/index.css"
       ],
       "@theme/*": ["src/core/components/theme/*"],
       "@theme": [
@@ -152,13 +120,13 @@
         "src/core/plugins/index.scss",
         "src/core/plugins/index.css"
       ],
-      "@services/*": ["src/core/services/*"],
-      "@services": [
-        "src/core/services/index.js",
-        "src/core/services/index.json",
-        "src/core/services/index.vue",
-        "src/core/services/index.scss",
-        "src/core/services/index.css"
+      "@apis/*": ["src/core/apis/*"],
+      "@apis": [
+        "src/core/apis/index.js",
+        "src/core/apis/index.json",
+        "src/core/apis/index.vue",
+        "src/core/apis/index.scss",
+        "src/core/apis/index.css"
       ],
       "@utils/*": ["src/core/utils/*"],
       "@utils": [

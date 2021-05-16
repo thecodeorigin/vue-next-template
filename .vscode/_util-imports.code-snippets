@@ -1,0 +1,92 @@
+{
+  "import-components": {
+    "scope": "javascript",
+    "prefix": "import components",
+    "body": ["import { ${1} } from '@components'",],
+  },
+  "import-common": {
+    "scope": "javascript",
+    "prefix": "import common",
+    "body": ["import { ${1} } from '@common'",],
+  },
+  "import-uncommon": {
+    "scope": "javascript",
+    "prefix": "import uncommon",
+    "body": ["import { ${1} } from '@uncommon'",],
+  },
+  "import-locales": {
+    "scope": "javascript",
+    "prefix": "import theme",
+    "body": ["import { ${1} } from '@locales'",],
+  },
+  "import-pages": {
+    "scope": "javascript",
+    "prefix": "import pages",
+    "body": ["import { ${1} } from '@pages'",],
+  },
+  "import-router": {
+    "scope": "javascript",
+    "prefix": "import router",
+    "body": ["import { ${1} } from '@router'",],
+  },
+  "import-store": {
+    "scope": "javascript",
+    "prefix": "import store",
+    "body": ["import { ${1} } from '@store'",],
+  },
+  "import-use": {
+    "scope": "javascript",
+    "prefix": "import use",
+    "body": ["import { ${1} } from '@use'",],
+  },
+  "import-examples": {
+    "scope": "javascript",
+    "prefix": "import examples",
+    "body": ["import { ${1} } from '@examples'",],
+  },
+  "import-core": {
+    "scope": "javascript",
+    "prefix": "import core",
+    "body": ["import { ${1} } from '@core'",],
+  },
+  "import-theme": {
+    "scope": "javascript",
+    "prefix": "import theme",
+    "body": ["import { ${1} } from '@theme'",],
+  },
+  "import-constants": {
+    "scope": "javascript",
+    "prefix": "import constants",
+    "body": ["import { ${1} } from '@constants'",],
+  },
+  "import-layouts": {
+    "scope": "javascript",
+    "prefix": "import layouts",
+    "body": ["import { ${1} } from '@layouts'",],
+  },
+  "import-middleware": {
+    "scope": "javascript",
+    "prefix": "import middleware",
+    "body": ["import { ${1} } from '@middleware'",],
+  },
+  "import-mixins": {
+    "scope": "javascript",
+    "prefix": "import mixins",
+    "body": ["import { ${1} } from '@mixins'",],
+  },
+  "import-plugins": {
+    "scope": "javascript",
+    "prefix": "import plugins",
+    "body": ["import { ${1} } from '@plugins'",],
+  },
+  "import-services": {
+    "scope": "javascript",
+    "prefix": "import services",
+    "body": ["import { ${1} } from '@services'",],
+  },
+  "import-utils": {
+    "scope": "javascript",
+    "prefix": "import utils",
+    "body": ["import { ${1} } from '@utils'",],
+  },
+}

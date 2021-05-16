@@ -1,6 +1,6 @@
 import qs from 'qs'
 import { $dev } from '@utils/functions'
-import { $clientApi } from '@services/client'
+import { $clientApi } from '@apis/client'
 
 /**
  * Fetch many records

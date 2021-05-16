@@ -1,7 +1,7 @@
 import qs from 'qs'
 import { $dev } from '@utils/functions'
-import { $clientApi } from '@services/client'
-import { $authApi } from '@services/auth'
+import { $clientApi } from '@apis/client'
+import { $authApi } from '@apis/auth'
 
 /**
  * Fetch many records

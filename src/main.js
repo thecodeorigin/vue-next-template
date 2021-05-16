@@ -18,8 +18,8 @@ import { createApp } from 'vue'
 import { router } from '@router'
 import { store } from '@store'
 // Services
-import { clientApiPlugin } from '@services/client'
-import { authApiPlugin } from '@services/auth'
+import { clientApiPlugin } from '@apis/client'
+import { authApiPlugin } from '@apis/auth'
 // Mixins
 import { globalMixin } from '@mixins/global'
 // Plugins
@@ -31,8 +31,9 @@ import { errorHandlingPlugin } from '@plugins/error'
 //
 import { utils } from '@utils'
 import Root from '@/Root.vue'
-import '@core/assets/css/main.css'
-import '@core/assets/scss/main.scss'
+
+import '@/core/styles/css/main.css'
+import '@/core/styles/scss/main.scss'
 
 // Check the imported files for code explanation
 createApp(Root)
