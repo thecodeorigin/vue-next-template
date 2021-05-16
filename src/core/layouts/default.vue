@@ -9,7 +9,7 @@
 import { defineComponent } from 'vue'
 import { Navbar } from '@/core/components/layout'
 export default defineComponent({
-  name: 'defaultLayout',
+  name: 'DefaultLayout',
   components: {
     Navbar,
   },

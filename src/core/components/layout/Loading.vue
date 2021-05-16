@@ -1,14 +1,14 @@
 <template>
-  <teleport to="#loading-area">
-    <div class="bg-theme-3 h-screen w-screen fixed top-0 left-0">
-      <div class="sk-folding-cube">
-        <div class="sk-cube1 sk-cube"></div>
-        <div class="sk-cube2 sk-cube"></div>
-        <div class="sk-cube4 sk-cube"></div>
-        <div class="sk-cube3 sk-cube"></div>
-      </div>
+  <div
+    class="bg-theme-3 h-screen w-screen fixed top-0 left-0 flex justify-center items-center"
+  >
+    <div class="sk-folding-cube">
+      <div class="sk-cube1 sk-cube"></div>
+      <div class="sk-cube2 sk-cube"></div>
+      <div class="sk-cube4 sk-cube"></div>
+      <div class="sk-cube3 sk-cube"></div>
     </div>
-  </teleport>
+  </div>
 </template>
 <style scoped>
 .sk-folding-cube {
@@ -36,7 +36,7 @@
   width: 100%;
   height: 100%;
   content: '';
-  background-color: #333;
+  background-color: var(--color-danger);
   -webkit-transform-origin: 100% 100%;
   -ms-transform-origin: 100% 100%;
   transform-origin: 100% 100%;
