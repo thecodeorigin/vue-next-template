@@ -40,6 +40,34 @@ yarn lint
 yarn lint --fix
 ```
 
+## Project structure
+
+Project folders:
+> These are the folders that you will frequently change while doing the project
+- components
+- locales
+- pages
+- router
+- services
+- store
+- styles
+
+Core folder:
+> These are the common features, components, pages,... for the whole project
+- api
+- components
+- constants
+- layouts
+- middleware
+- mixins
+- pages
+- plugins
+- styles
+- utils
+
+>Code will be put in the core folder if create a new feature, a new module doesn't make change to that code
+
+
 ### Customize configuration
 
 See [Configuration Reference](https://cli.vuejs.org/config/).
