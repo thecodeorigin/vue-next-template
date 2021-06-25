@@ -1,7 +1,7 @@
 export default {
-  home: 'Trang chủ',
-  'blogs-management': 'Quản lý blogs',
-  blog: 'Blogs',
-  category: 'Categories',
-  tag: 'Tags',
+  dashboard: 'Trang chủ',
+  'projects-management': 'Quản lý dự án',
+  project: 'Dự án',
+  category: 'Danh mục',
+  tag: 'Thẻ',
 }

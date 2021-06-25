@@ -1,1 +1,0 @@
-# Create a CRUD page faster with this module

@@ -1,17 +1,17 @@
 <template>
   <div class="default__layout">
-    <Navbar />
+    <MyNavbar />
     <slot />
   </div>
 </template>
 
 <script>
 import { defineComponent } from 'vue'
-import { Navbar } from '@/core/components/layout'
+import { MyNavbar } from '@/core/components/layout'
 export default defineComponent({
   name: 'DefaultLayout',
   components: {
-    Navbar,
+    MyNavbar,
   },
 })
 </script>

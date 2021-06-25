@@ -7,6 +7,6 @@
 <script>
 import { defineComponent } from 'vue'
 export default defineComponent({
-  name: 'blankLayout',
+  name: 'BlankLayout',
 })
 </script>

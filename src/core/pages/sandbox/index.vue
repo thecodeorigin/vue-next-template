@@ -8,7 +8,7 @@ export default {
     if (process.env.NODE_ENV === 'development') {
       next()
     } else {
-      next({ name: 'home' })
+      next({ name: 'dashboard' })
     }
   },
 }

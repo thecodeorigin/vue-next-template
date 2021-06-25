@@ -1,4 +1,6 @@
-export { default as Footer } from './Footer.vue'
-export { default as Header } from './Header.vue'
-export { default as Navbar } from './Navbar.vue'
-export { default as Sidebar } from './Sidebar.vue'
+import { MySidebar } from './MySidebar'
+import { MyFooter } from './MyFooter'
+import { MyLoading } from './MyLoading'
+import { MyNavbar } from './MyNavbar'
+
+export { MySidebar, MyFooter, MyLoading, MyNavbar }

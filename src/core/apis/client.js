@@ -1,5 +1,5 @@
 import axios from 'axios'
-import { dev } from '@utils/functions/dev'
+import dev from '@utils/functions/dev'
 
 // Create a custom axios instance
 export const clientApi = axios.create({

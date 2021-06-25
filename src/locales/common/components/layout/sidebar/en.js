@@ -1,7 +1,7 @@
 export default {
-  home: 'Home',
-  'blogs-management': 'Blogs management',
-  blog: 'Blogs',
-  category: 'Danh mục',
-  tag: 'Thẻ',
+  dashboard: 'Dashboard',
+  'projects-management': 'Projects management',
+  project: 'Projects',
+  category: 'Category',
+  tag: 'Tag',
 }

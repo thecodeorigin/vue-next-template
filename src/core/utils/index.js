@@ -24,9 +24,6 @@ export const utils = {
         case 'directives':
           app.directive(moduleName, module)
           break;
-        case 'global-components':
-          app.component(moduleName, module)
-          break;
         case 'functions':
           app.config.globalProperties[moduleName] = module
           break;

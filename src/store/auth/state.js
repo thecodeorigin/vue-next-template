@@ -1,3 +1,9 @@
 export const state = () => ({
-  data: null,
+  data: {
+    user: {
+      email: 'hehe@gmail.com',
+      permissions: ['SEE_STUFF'],
+    },
+    token: 'superUltraSecretToken',
+  },
 })

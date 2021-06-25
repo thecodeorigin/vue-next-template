@@ -1,6 +1,7 @@
 import axios from 'axios'
 import { store } from '@store'
-import { dev } from '@utils/functions/dev'
+import dev from '@utils/functions/dev'
+
 // Create a custom axios instance
 export const authApi = axios.create({
   baseURL: process.env.VUE_APP_API_URL,
@@ -15,7 +16,7 @@ export const authApi = axios.create({
 // Add a request interceptor
 authApi.interceptors.request.use(
   (config) => {
-    config.headers.Authorization = 'Bearer ' + store?.state?.auth?.data?.token
+    config.headers.Authorization = 'Bearer ' + store.getters['auth/accessToken']
     dev.log('DevOnly | Authenticated API executed')
     // Must return config
     return config

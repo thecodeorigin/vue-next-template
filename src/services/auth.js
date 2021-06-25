@@ -1,5 +1,6 @@
 import { clientApi } from '@/core/apis/client'
 
-export const authService = {
-  signin: (form) => clientApi.post('/auth/signin', form),
+export class AuthService {
+  signin = (form) => clientApi.post('/auth/signin', form)
+  signup = (form) => clientApi.post('/auth/signup', form)
 }

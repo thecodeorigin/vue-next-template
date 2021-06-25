@@ -7,7 +7,7 @@
 <script>
 import { defineComponent } from 'vue'
 export default defineComponent({
-  name: 'unauthLayout',
+  name: 'UnauthLayout',
 })
 </script>
 <style lang="scss" scoped>
