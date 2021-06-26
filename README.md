@@ -67,7 +67,13 @@ Core folder:
 
 >Code will be put in the core folder if create a new feature, a new module doesn't make change to that code
 
+## Conventions
 
-### Customize configuration
+> Keep things clear, annotatable, highlightable by editor, be friendly with devTools
 
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- Checkout [Nuxt.js](https://nuxtjs.org) for more naming convention
+- Use **PascalCase** for component name for better editor annotation and highlighting support
+- Use **camelCase** for variables and functions
+- Use `export const` instead of `export default` for auto import support
+- Use `My` for custom component prefix, for example: `MyCustomComponent`
+- Use `my-` for events prefix for better filtering in devTools, for example: `my-blog-item-click`
