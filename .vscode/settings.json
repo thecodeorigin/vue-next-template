@@ -1,0 +1,29 @@
+{
+  "material-icon-theme.folders.color": "#ef5350",
+  "material-icon-theme.activeIconPack": "vue_vuex",
+  "material-icon-theme.files.associations": {
+    "actions.js": "vuex-store",
+    "getters.js": "vuex-store",
+    "mutations.js": "vuex-store",
+    "state.js": "vuex-store",
+    "actions.ts": "vuex-store",
+    "getters.ts": "vuex-store",
+    "mutations.ts": "vuex-store",
+    "state.ts": "vuex-store",
+    "i18n.js": "i18n",
+    "en.json": "i18n",
+    "vi.json": "i18n",
+    "*.strategy.ts": "lock",
+    ".env.development.example": "tune",
+    ".env.production.example": "tune"
+  },
+  "material-icon-theme.folders.associations": {
+    "dto": "typescript",
+    "enum": "typescript",
+    "ro": "typescript",
+    "interfaces": "typescript",
+    "decorators": "typescript",
+    "mixins": "vue",
+    "use": "mappings"
+  }
+}
