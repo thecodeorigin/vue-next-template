@@ -5,6 +5,7 @@ import { createApp } from "vue";
 import App from "./App.vue";
 import router from "./router";
 import { store } from "./store";
+import { i18nPlugin } from "./core/plugins/i18n";
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 const updateSW = registerSW({
@@ -16,4 +17,4 @@ const updateSW = registerSW({
   },
 });
 
-createApp(App).use(store).use(router).mount("#app");
+createApp(App).use(store).use(router).use(i18nPlugin).mount("#app");
