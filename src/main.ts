@@ -1,11 +1,16 @@
 import "virtual:windi.css";
-import { registerSW } from "virtual:pwa-register";
-import { createApp } from "vue";
+import "./core/styles/css/all.css";
+import "./core/styles/scss/all.scss";
 
 import App from "./App.vue";
-import router from "./router";
+
+import { createApp } from "vue";
+
 import { store } from "./store";
+import { router } from "./router";
 import { i18nPlugin } from "./core/plugins/i18n";
+
+import { registerSW } from "virtual:pwa-register";
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 const updateSW = registerSW({
