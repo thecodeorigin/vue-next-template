@@ -16,6 +16,7 @@ module.exports = {
   rules: {
     "no-console": import.meta.env.PROD ? "warn" : "off",
     "no-debugger": import.meta.env.PROD ? "warn" : "off",
+    'quote-props': [2, 'consistent-as-needed'],
     "@typescript-eslint/no-explicit-any": "off"
   },
   overrides: [
