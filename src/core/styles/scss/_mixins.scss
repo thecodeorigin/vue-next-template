@@ -28,39 +28,30 @@
   justify-content: center;
 }
 
-@mixin centerAbsolute($direction: 'both') {
+@mixin centerAbsolute($direction: "both") {
   position: absolute;
 
-  @if ($direction == 'both') {
+  @if ($direction == "both") {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
 
-  @if ($direction == 'x') {
+  @if ($direction == "x") {
     left: 50%;
     transform: translateX(-50%);
   }
 
-  @if ($direction == 'y') {
+  @if ($direction == "y") {
     top: 50%;
     transform: translateY(-50%);
   }
 }
 
-@mixin boxShadow(
-  $x: 0,
-  $y: 0,
-  $blur: 0,
-  $spread: 0,
-  $color: 0,
-  $inset: false
-) {
+@mixin boxShadow($x: 0, $y: 0, $blur: 0, $spread: 0, $color: 0, $inset: false) {
   @if ($inset) {
     box-shadow: inset $x $y $blur $spread $color;
-  }
-
-  @else {
+  } @else {
     box-shadow: $x $y $blur $spread $color;
   }
 }

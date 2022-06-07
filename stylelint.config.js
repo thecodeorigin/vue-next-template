@@ -1,22 +1,17 @@
 module.exports = {
-  extends: [
-    'stylelint-config-standard',
-    'stylelint-config-prettier',
-  ],
-  plugins: [
-    'stylelint-scss',
-  ],
+  extends: ["stylelint-config-standard", "stylelint-config-prettier"],
+  plugins: ["stylelint-scss"],
   // add your custom config here
   // https://stylelint.io/user-guide/configuration
   rules: {
-    'selector-pseudo-class-no-unknown': [
+    "selector-pseudo-class-no-unknown": [
       true,
       {
-        ignorePseudoClasses: ['global', 'local', 'root']
-      }
+        ignorePseudoClasses: ["global", "local", "root"],
+      },
     ],
-    'at-rule-no-unknown': null,
-    'scss/at-rule-no-unknown': true,
-    'no-descending-specificity': null,
+    "at-rule-no-unknown": null,
+    "scss/at-rule-no-unknown": true,
+    "no-descending-specificity": null,
   },
 };
