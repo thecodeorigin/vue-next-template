@@ -1,11 +1,11 @@
 import type { RouteRecordRaw } from "vue-router";
 import { Layout } from "@/core/constants/layout.enum";
 
-export const dashboardRoutes: RouteRecordRaw = {
-  path: "/",
-  name: "DashboardPage",
+export const aboutRoutes: RouteRecordRaw = {
+  path: "/about",
+  name: "AboutPage",
   component: () => import("./page.vue"),
   meta: {
-    layout: Layout.DEFAULT,
+    layout: Layout.BLANK,
   },
 };

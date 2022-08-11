@@ -1,11 +1,14 @@
-<script lang="tsx">
+<template>
+  <div>
+    Default layout
+    <slot />
+  </div>
+</template>
+
+<script lang="ts">
 import { defineComponent } from "vue";
-import { RouterView } from "vue-router";
 
 export default defineComponent({
-  name: "BlankLayout",
-  setup() {
-    return () => <RouterView />;
-  },
+  name: "DefaultLayout",
 });
 </script>

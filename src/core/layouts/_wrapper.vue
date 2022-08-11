@@ -2,7 +2,6 @@
 import { defineComponent, h, computed } from "vue";
 import { useRoute } from "vue-router";
 import { Layout } from "@/core/constants/layout.enum";
-import { useRootStore } from "@/core/store";
 
 import DefaultLayout from "@/core/layouts/default.vue";
 import BlankLayout from "@/core/layouts/blank.vue";
@@ -13,8 +12,8 @@ const LayoutMap = Object.freeze({
 });
 
 export default defineComponent({
-  setup() {
-    const rootStore = useRootStore();
+  name: "LayoutWrapper",
+  setup(props, { slots }) {
     const route = useRoute();
 
     const layoutVNode = computed(() => {
@@ -23,14 +22,7 @@ export default defineComponent({
       return LayoutMap[layout] || DefaultLayout;
     });
 
-    const isDarkMode = computed(() => rootStore.$state.isDarkMode);
-
-    return () =>
-      h(
-        "div",
-        { class: ["min-h-screen", isDarkMode.value ? "dark" : ""] },
-        h(layoutVNode.value)
-      );
+    return () => h(layoutVNode.value, () => slots.default?.());
   },
 });
 </script>

@@ -1,9 +1,10 @@
 import axios from "axios";
 
+import type { App } from "vue";
 import { useAuthStore } from "@/modules/auth/store";
 
 export const httpPlugin = {
-  install() {
+  install(app: App) {
     const http = axios.create({
       timeout: 30000, // 30s
       headers: {
@@ -24,7 +25,7 @@ export const httpPlugin = {
       (error) => {
         // Do something with request error
         return Promise.reject(error);
-      }
+      },
     );
 
     // Add a response interceptor
@@ -38,9 +39,12 @@ export const httpPlugin = {
         // Any status codes that falls outside the range of 2xx cause this function to trigger
         // Do something with response error
         return Promise.reject(error);
-      }
+      },
     );
 
-    window.$http = http;
+    // eslint-disable-next-line no-param-reassign
+    app.config.globalProperties.$http = http;
+
+    app.provide("$http", http);
   },
 };

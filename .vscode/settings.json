@@ -1,5 +1,5 @@
 {
   "typescript.tsdk": "node_modules\\typescript\\lib",
   "volar.autoCompleteRefs": true,
-  "volar.takeOverMode.enabled": true
+  "volar.takeOverMode.enabled": "auto"
 }
