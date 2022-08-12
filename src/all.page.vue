@@ -2,7 +2,7 @@
   <div :class="{ class: ['min-h-screen', isDarkMode ? 'dark' : ''] }">
     <LayoutWrapper>
       <router-view v-slot="{ Component }">
-        <Suspense>
+        <Suspense v-if="Component">
           <component :is="Component" />
         </Suspense>
       </router-view>
